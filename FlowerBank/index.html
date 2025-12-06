@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 class="title">🌸 Flower Bank</h1>
+
+   <div class="nav">
+    <button id="dashboardTab" class="tab">Dashboard</button>
+    <button id="addTab" class="tab">Add Money</button>
+    <button id="withdrawTab" class="tab">Withdraw</button>
+    <button id="historyTab" class="tab">Transactions</button>
+  </div>
+   
+   <!-- Dashboard  -->
+    <section id="dashboardSection" class="card">
+    <h2 class="currentTitle">Current Balance</h2>
+    <p id="balanceDisplay" class="balance">$ 0</p>
+    <div class="btn-group">
+      <button id="goAdd" class="btn pink go">Add Money</button>
+      <button id="goWithdraw" class="btn yellow go">Withdraw</button>
+      <button id="goHistory" class="btn blue go">View History</button>
+    </div>
+  </section>
+
+  <!-- Add Money -->
+  <section id="addSection" class="card hidden">
+    <h2 class="pink-text">Add Money</h2>
+    <input id="addAmount" type="number" placeholder="Enter your amount" class="input" />
+    <button id="addBtn" class="btn pink">Confirm Add</button>
+    <p id="addError" class="error"></p>
+  </section>
+
+  <!-- Withdraw -->
+  <section id="withdrawSection" class="card hidden">
+    <h2 class="yellow-text">Withdraw Money</h2>
+    <input id="withdrawAmount" type="number" placeholder="Enter your amount" class="input yellow-input" />
+    <button id="withdrawBtn" class="btn yellow">Confirm Withdraw</button>
+    <p id="withdrawError" class="error"></p>
+  </section>
+  
+  <!-- History -->
+    <section id="historySection" class="card hidden wide">
+    <h2 class="blue-text">Transaction History</h2>
+    <table class="table">
+      <thead>
+        <tr class="head">
+          <th>Date</th>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Balance After</th>
+        </tr>
+      </thead>
+      <tbody id="transactionList"></tbody>
+    </table>
+  </section>
+
+   
+    <script src="main.js"></script>
+</body>
+</html>

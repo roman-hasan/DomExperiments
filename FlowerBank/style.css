@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+     font-family: "Jost", sans-serif;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+body{
+    background-color: #0d1117;
+    color: #d1d6db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.title{
+    font-size: clamp(22px, 6vw, 32px);
+    color: #ff70a6;
+    margin-bottom: 2rem;
+}
+
+
+.tab {
+  margin: 0 0.5rem;
+  background: #161B22;
+  border: 1px solid #30363d;
+  color: #d1d5db;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  margin-bottom: 2rem;
+}
+
+.tab:hover{
+    background-color: #d1d5db;
+    color: #161B22;
+}
+
+.card {
+  background: #161B22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+.balance {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #16A34A;
+  margin: 1rem 0.5rem;
+}
+
+.currentTitle{
+    margin: 0 0.5rem;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  margin: 0.5rem 0.25rem;
+}
+
+.btn.pink {
+  background: #ff70a6;
+  color: white;
+}
+.btn.pink:hover {
+  background: #ff5e9e;
+}
+
+.btn.yellow {
+  background: #facc15;
+  color: black;
+}
+.btn.yellow:hover {
+  background: #fbbf24;
+}
+
+.btn.blue {
+  background: #3b82f6;
+  color: white;
+}
+.btn.blue:hover {
+  background: #2563eb;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  background: #0D1117;
+  border: 1px solid #30363d;
+  color: #d1d5db;
+  border-radius: 8px;
+  margin: 0.5rem 0 1rem 0;
+  outline: none;
+}
+
+
+h2{
+    margin-bottom: 0.5rem;
+}
+
+.input:focus {
+  border-color: #ff70a6;
+  box-shadow: 0 0 4px #ff70a6;
+}
+
+.yellow-input:focus{
+    border-color: #facc15;
+    box-shadow: 0 0 4px #facc15;
+}
+
+.pink-text { 
+    color: #ff70a6; 
+}
+
+.yellow-text { 
+    color: #facc15; 
+}
+
+.blue-text {
+    color: #3b82f6;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th, .table td {
+  text-align: left;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.table thead {
+  background: #1f2937;
+  color: #9ca3af;
+  
+}
+
+.table tbody tr {
+  border-top: 1px solid #30363d;
+  transition: 0.3s;
+  
+}
+
+.table tbody tr:hover {
+  background: #1f2937;
+}
+
+.error {
+  color: #f87171;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  padding-left: 6px;
+}
+
+.hidden{
+  display: none;
+}
+
+.wide{
+  max-width: 600px;
+}
+
+.head{
+  text-align: center;
+}
