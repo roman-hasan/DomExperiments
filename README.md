@@ -2,7 +2,7 @@
 A simple Todo List application to manage your daily tasks efficiently.  
 Add, edit, delete, and mark tasks as completed
 
-🔗 **Live Demo:** [Click Here](https://roman-hasan.github.io/Dom-Experiments/ToDo/)
+🔗 **Live Demo:** [Click Here](https://roman-hasan.github.io/DomExperiments/ToDo/)
 
 
 
@@ -10,4 +10,4 @@ Add, edit, delete, and mark tasks as completed
 A simple front-end banking system to manage deposits, withdrawals, and transaction history
 - This project helps users easily manage their personal finances
 
-🔗 **Live Demo:** [Click Here](https://roman-hasan.github.io/Dom-Experiments/FlowerBank/)
+🔗 **Live Demo:** [Click Here](https://roman-hasan.github.io/DomExperiments/FlowerBank/)
