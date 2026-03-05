@@ -9,6 +9,17 @@ const addTask = () =>{
 const text = input.value.trim()
     
     if(text !== ''){
+
+     const existingTasks = todoList.querySelectorAll('li span')
+
+     for(let task of existingTasks){
+        if(task.textContent.toLowerCase() === text.toLowerCase()){
+            alert('Task already exists!')
+            input.value = ''
+            return
+        }
+     }
+
     const span = document.createElement('span')
     span.textContent = text
 
@@ -82,16 +93,27 @@ const text = input.value.trim()
 
 
     })
-    
-    pending.addEventListener('click', ()=>{
-        span.classList = 'completed'
-        pending.innerHTML = '<i class="fa-solid fa-square-check"></i>'
-        pending.style.color = '#59AC77'
+     pending.addEventListener('click', ()=>{
+
+        if(span.classList.contains('completed')){
+            span.classList.remove('completed')
+            pending.innerHTML = '<i class="fa-solid fa-clock-rotate-left"></i>'
+            pending.style.color = '#000'
+        }
+
+        else{
+            span.classList.add('completed')
+            pending.innerHTML = '<i class="fa-solid fa-square-check"></i>'
+            pending.style.color = '#59AC77'
+        }
+
     })
 
     } else{
         alert('Please write a task!')
     }
+
+    input.value = ''
 
 }
 
